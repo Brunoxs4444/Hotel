@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('imagem1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+nav{
+    
+    width: 100%;
+    height: 15vh;
+    background: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    text-transform: uppercase;
+
+}
+
+.logo{
+    width: 25%;
+    text-align: center;
+
+}
+
+.menu{
+    
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    
+}
+
+.menu a{
+    
+    width: 25%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu a:first-child{
+    color:#00b845
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    justify-content: center;
+    direction: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+section h3{
+    padding: 30px;
+    margin: 10px;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 10px;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+
+}
+
+section p{
+    padding: 30px;
+    margin: 10px;
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline:none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+
+section .btnone{
+    background: #fff;
+    color:#000;
+}
+
+
+
+
+
+.change_animation:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: rgb(176, 230, 30);
+
+
+
+}
+
+@keyframes changetext{
+    0%{content:"Infinity";}
+    20%{content: "Portugal";}
+    35%{ content:"Salvador";}
+    60%{ content:"Recife";}
+    80%{content:"Gramado";}
+    100%{content:"Infinity" 10s;}
+}
